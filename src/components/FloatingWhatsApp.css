@@ -54,10 +54,10 @@
 
 @media (max-width: 768px) {
   .whatsapp-float {
-    bottom: 25px;
-    right: 25px;
-    width: 60px;
-    height: 60px;
+    bottom: calc(20px + env(safe-area-inset-bottom, 20px));
+    right: calc(20px + env(safe-area-inset-right, 20px));
+    width: 58px;
+    height: 58px;
   }
   
   .tooltip {
