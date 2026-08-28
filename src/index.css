@@ -130,3 +130,27 @@ h1, h2, h3, h4 {
   background: var(--primary-light);
   border-radius: 10px;
 }
+
+@media (max-width: 768px) {
+  section {
+    padding: 60px 0;
+  }
+
+  .container {
+    padding: 0 1.25rem;
+  }
+
+  .section-title {
+    font-size: 2.1rem;
+  }
+
+  .section-description {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .btn-primary, .btn-secondary {
+    padding: 0.85rem 1.8rem;
+    font-size: 0.95rem;
+  }
+}

@@ -127,3 +127,29 @@
     max-width: 350px;
   }
 }
+
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.15rem;
+  }
+
+  .hero-ctas {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .hero-ctas .btn-primary,
+  .hero-ctas .btn-secondary {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-image-frame {
+    max-width: 280px;
+  }
+}

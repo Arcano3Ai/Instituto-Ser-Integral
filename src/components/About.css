@@ -109,3 +109,30 @@
     right: 20px;
   }
 }
+
+@media (max-width: 600px) {
+  .about-container {
+    gap: 40px;
+  }
+
+  .experience-badge {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    margin-top: 15px;
+    padding: 1rem;
+  }
+
+  .achievements-pro {
+    gap: 1.5rem;
+    justify-content: space-between;
+  }
+
+  .achievement-val {
+    font-size: 1.5rem;
+  }
+
+  .achievement-label {
+    font-size: 0.75rem;
+  }
+}

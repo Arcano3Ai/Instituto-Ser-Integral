@@ -123,3 +123,27 @@
     max-width: 100%;
   }
 }
+
+@media (max-width: 480px) {
+  .timeline-container {
+    margin-top: 40px;
+  }
+
+  .timeline-item {
+    padding-left: 45px;
+    padding-right: 0;
+  }
+
+  .timeline-line {
+    left: 15px;
+  }
+
+  .timeline-dot {
+    left: 5px !important;
+  }
+
+  .timeline-content {
+    padding: 20px;
+    border-radius: 20px;
+  }
+}
