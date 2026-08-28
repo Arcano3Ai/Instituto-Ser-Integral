@@ -11,6 +11,7 @@ export default defineConfig({
     setupFiles: './src/setupTests.ts',
   },
   build: {
+    outDir: 'docs',
     rollupOptions: {
       output: {
         manualChunks(id) {
