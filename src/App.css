@@ -1,0 +1,10 @@
+.app-main {
+  position: relative;
+}
+
+.footer {
+  padding: 40px 5%;
+  background-color: var(--earth-brown);
+  color: var(--primary-beige);
+  text-align: center;
+}

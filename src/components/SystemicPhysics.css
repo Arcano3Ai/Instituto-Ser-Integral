@@ -1,0 +1,10 @@
+.systemic-physics-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none; /* Let clicks pass through */
+  z-index: -1;
+  background: radial-gradient(circle at 50% 50%, #FFFFFF 0%, #F5F5F0 100%);
+}

@@ -1,0 +1,129 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--bg-zen);
+  padding: 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(253, 250, 245, 0.95) 0%, rgba(253, 250, 245, 0.7) 100%);
+  z-index: 1;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content {
+  flex: 1.2;
+  max-width: 600px;
+}
+
+.hero-title {
+  font-size: 4rem;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+  font-family: 'Playfair Display', serif;
+}
+
+.hero-subtitle {
+  font-size: 1.4rem;
+  color: var(--text-main);
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin-bottom: 2.5rem;
+  max-width: 500px;
+}
+
+.hero-ctas {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.hero-image-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image-frame {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  aspect-ratio: 4/5;
+}
+
+.hero-main-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+.floating-element {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  z-index: -1;
+}
+
+.circle-1 {
+  width: 200px;
+  height: 200px;
+  top: -50px;
+  right: -50px;
+}
+
+.circle-2 {
+  width: 150px;
+  height: 150px;
+  bottom: -30px;
+  left: -40px;
+}
+
+@media (max-width: 1024px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 120px;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+  }
+  
+  .hero-description {
+    margin: 0 auto 2.5rem;
+  }
+  
+  .hero-ctas {
+    justify-content: center;
+  }
+  
+  .hero-image-frame {
+    max-width: 350px;
+  }
+}

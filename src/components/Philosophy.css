@@ -1,0 +1,102 @@
+.philosophy-section {
+  background-color: var(--white);
+  padding: 120px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 80px;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.subtitle-holistic {
+  font-size: 2rem;
+  color: var(--sage-green);
+  margin-bottom: 25px;
+  line-height: 1.2;
+}
+
+.description-holistic {
+  font-size: 1.15rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.orders-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.order-card {
+  display: flex;
+  gap: 25px;
+  background: var(--primary-beige);
+  padding: 35px;
+  border-radius: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  transition: var(--transition-smooth);
+}
+
+.order-card:hover {
+  background: var(--white);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.04);
+  transform: translateX(10px);
+  border-color: var(--soft-gold);
+}
+
+.order-icon-box {
+  width: 60px;
+  height: 60px;
+  background: var(--white);
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--terracotta);
+  flex-shrink: 0;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.03);
+}
+
+.order-info h4 {
+  font-size: 1.5rem;
+  color: var(--earth-brown);
+  margin-bottom: 8px;
+}
+
+.order-info p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.sacred-geometry {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  opacity: 0.05;
+  color: var(--earth-brown);
+  pointer-events: none;
+  z-index: 1;
+}
+
+@media (max-width: 1024px) {
+  .philosophy-grid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+    text-align: center;
+  }
+  
+  .order-card {
+    text-align: left;
+  }
+}

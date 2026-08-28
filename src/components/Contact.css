@@ -1,0 +1,141 @@
+.contact {
+  background-color: var(--primary-beige);
+}
+
+.contact-container {
+  display: flex;
+  gap: 80px;
+  align-items: flex-start;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.contact-subtitle {
+  font-size: 1.8rem;
+  color: var(--earth-brown);
+  margin-bottom: 20px;
+}
+
+.contact-text {
+  color: var(--text-muted);
+  margin-bottom: 40px;
+}
+
+.contact-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.method strong {
+  color: var(--terracotta);
+  display: block;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.method span {
+  color: var(--text-dark);
+  font-size: 1.1rem;
+}
+
+.contact-form {
+  flex: 1.2;
+  background: var(--white);
+  padding: 50px;
+  border-radius: 30px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.03);
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.form-group input, 
+.form-group textarea {
+  width: 100%;
+  padding: 15px 20px;
+  background-color: var(--primary-beige);
+  border: 1px solid transparent;
+  border-radius: 12px;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: var(--transition-smooth);
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+  outline: none;
+  background-color: var(--white);
+  border-color: var(--soft-gold);
+  box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.1);
+}
+
+.submit-btn {
+  width: 100%;
+  background-color: var(--terracotta);
+  color: white;
+  padding: 18px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: var(--transition-smooth);
+}
+
+.submit-btn:hover {
+  background-color: var(--earth-brown);
+  transform: translateY(-2px);
+}
+
+.submit-btn:disabled {
+  background-color: var(--text-muted);
+  cursor: not-allowed;
+  transform: none;
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media (max-width: 900px) {
+  .contact-container {
+    flex-direction: column;
+  }
+  
+  .contact-form {
+    width: 100%;
+    padding: 30px;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}

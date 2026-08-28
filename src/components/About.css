@@ -1,0 +1,111 @@
+.about {
+  background-color: var(--bg-zen);
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.about-image-wrapper {
+  flex: 1;
+}
+
+.about-image-frame {
+  position: relative;
+}
+
+.about-img {
+  width: 100%;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+}
+
+.experience-badge {
+  position: absolute;
+  bottom: -30px;
+  right: -30px;
+  background-color: var(--primary);
+  color: white;
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+}
+
+.experience-badge .years {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.experience-badge .text {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.about-content-pro {
+  flex: 1.2;
+}
+
+.subtitle-pro {
+  font-size: 1.5rem;
+  color: var(--secondary);
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.about-description p {
+  margin-bottom: 1.5rem;
+  color: var(--text-muted);
+}
+
+.achievements-pro {
+  display: flex;
+  gap: 3rem;
+  margin: 2.5rem 0;
+}
+
+.achievement-item {
+  text-align: center;
+}
+
+.achievement-val {
+  display: block;
+  font-size: 1.8rem;
+  color: var(--primary);
+  margin-bottom: 0.3rem;
+}
+
+.achievement-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+.signature-name {
+  display: block;
+  font-size: 1.4rem;
+  margin-top: 2rem;
+}
+
+.signature-title {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 1024px) {
+  .about-container {
+    flex-direction: column;
+    gap: 60px;
+  }
+  
+  .experience-badge {
+    bottom: -20px;
+    right: 20px;
+  }
+}
